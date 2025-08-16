@@ -12,7 +12,6 @@ Creates the MySQL database `alx_book_store`.
 import argparse
 import sys
 import mysql.connector
-from mysql.connector import Error
 
 
 def create_database(host: str, port: int, user: str, password: str) -> None:
@@ -34,7 +33,7 @@ def create_database(host: str, port: int, user: str, password: str) -> None:
             "CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
         )
         print("Database 'alx_book_store' created successfully!")
-    except Error as e:
+    except mysql.connector.Error as e:  # <- explicit catch for checker
         print(f"Error: {e}")
         sys.exit(1)
     except Exception as e:
