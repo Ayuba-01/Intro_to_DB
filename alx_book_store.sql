@@ -52,10 +52,10 @@ CREATE TABLE IF NOT EXISTS Order_Details (
   book_id INT UNSIGNED,
   quantity DOUBLE,
   PRIMARY KEY (orderdetailid),
-  FOREIGN KEY (order_id) REFERENCES Orders (order_id)
+  FOREIGN KEY (order_id) REFERENCES Orders(order_id)
     ON UPDATE CASCADE
     ON DELETE CASCADE,
-  FOREIGN KEY (book_id) REFERENCES Books (book_id)
+  FOREIGN KEY (book_id) REFERENCES Books(book_id)
     ON UPDATE CASCADE
     ON DELETE RESTRICT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
