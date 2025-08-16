@@ -15,9 +15,9 @@ CREATE TABLE IF NOT EXISTS "Authors" (
 -- CUSTOMERS table
 CREATE TABLE IF NOT EXISTS "Customers" (
   "customer_id " INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  "customer_name  VARCHAR(215)" NOT NULL,
-  "email  VARCHAR(215)" NOT NULL,
-  "address TEXT",
+  "customer_name "VARCHAR(215) NOT NULL,
+  "email "VARCHAR(215) NOT NULL,
+  "address "TEXT,
   PRIMARY KEY ("customer_id "),
   UNIQUE KEY "ux_customers_email" ("email ")
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
