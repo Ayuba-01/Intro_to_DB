@@ -3,7 +3,6 @@
 MySQLServer.py
 Creates the MySQL database `alx_book_store`.
 - If the database already exists, the script does not fail.
-- Does not use SELECT or SHOW statements.
 - Prints a success message when the DB is created (or already exists).
 - Prints clear error messages on connection or execution failure.
 - Properly opens and closes the DB connection.
