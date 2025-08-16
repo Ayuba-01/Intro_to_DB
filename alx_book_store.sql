@@ -7,8 +7,8 @@ USE alx_book_store;
 
 -- AUTHORS table
 CREATE TABLE IF NOT EXISTS "Authors" (
-  "author_id" INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  "author_name" VARCHAR(215) NOT NULL,
+  "author_id " INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  "author_name " VARCHAR(215) NOT NULL,
   PRIMARY KEY ("author_id")
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
