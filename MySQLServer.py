@@ -27,7 +27,6 @@ def create_database(host: str, port: int, user: str, password: str) -> None:
             autocommit=True,
         )
         cursor = conn.cursor()
-        # No SELECT/SHOW usage; rely on IF NOT EXISTS
         cursor.execute(
             "CREATE DATABASE IF NOT EXISTS alx_book_store "
             "CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
