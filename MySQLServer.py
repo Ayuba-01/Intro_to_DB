@@ -10,7 +10,7 @@ Creates the MySQL database `alx_book_store`.
 
 import argparse
 import sys
-import mysql.connector
+import mysql.connector 
 
 
 def create_database(host: str, port: int, user: str, password: str) -> None:
